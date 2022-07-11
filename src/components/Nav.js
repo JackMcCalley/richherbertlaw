@@ -41,13 +41,22 @@ function Nav() {
             </li>
             <li>
               <NavLink
-                to="Testimonies"
+                to="Testimonials"
                 style={({ isActive }) =>
                   isActive ? activeStyle : defaultStyle
                 }
               >
-                TESTIMONIES
+                TESTIMONIALS
               </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="Specialties"
+                style={({ isActive }) => 
+                  isActive ? activeStyle : defaultStyle
+                }>
+                  SPECIALTIES
+                </NavLink>
             </li>
             <li>
               <NavLink

@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 import Nav from "./components/Nav";
-import Testimonies from "./components/Testimonies";
+import Testimonials from "./components/Testimonials";
 import { Route, Routes } from "react-router-dom";
 import Divider from "./components/Divider";
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <Divider />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/test" element={<Testimonies />} />
+          <Route exact path="/Testimonials" element={<Testimonials />} />
         </Routes>
       </div>
     </div>
