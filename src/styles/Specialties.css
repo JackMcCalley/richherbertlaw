@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.specialty-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialty-background {
+    width: 80vw;
+    height: auto;
+    padding: 3rem;
+}
+
+.specialty-title {
+    font-family: 'Libre Baskerville';
+    position: relative;
+    font-size: 64px;
+}
