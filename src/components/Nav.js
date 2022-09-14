@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import "../styles/Styles.css";
+import "../styles/Header.css"
 import richlogo from "../assets/richlogo.png";
 
 function Nav() {
