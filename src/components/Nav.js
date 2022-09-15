@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useRef} from "react";
 import { NavLink, Link } from "react-router-dom";
 import "../styles/Styles.css";
 import "../styles/Header.css"
-import richlogo from "../assets/richlogo.png";
+import richlogowhite from "../assets/richlogowhite.png";
 
 function Nav() {
   let activeStyle = {
@@ -14,31 +14,36 @@ function Nav() {
   let defaultStyle = {
     textDecoration: "none",
   };
+
+  // const myRef = useRef(null)
+
+  // const executeScroll = myRef.current.scrollIntoView()
+
   return (
     <div className="header">
       <container className="site-title">
         <row style={{ display: "flex", justifyContent: "center" }}>
           <div className="image-container">
-            <img src={richlogo} alt="logo" />
+            <img src={richlogowhite} alt="logo" />
           </div>
         </row>
-        <row className="subtitle">The Law Office Of</row>
+        <row className="subtitle">THE LAW OFFICE OF</row>
         <row className="title-text">
-        Rich Herbert, P.C.
+        RICH HERBERT, P.C.
         </row>
       </container>
       <row>
         <nav className="nav">
           <ul className="ul">
+            
             <li>
               <NavLink
-                to="/"
-                style={({ isActive }) =>
+                to="Specialties"
+                style={({ isActive }) => 
                   isActive ? activeStyle : defaultStyle
-                }
-              >
-                HOME
-              </NavLink>
+                }>
+                  SPECIALTIES
+                </NavLink>
             </li>
             <li>
               <NavLink
@@ -49,15 +54,6 @@ function Nav() {
               >
                 TESTIMONIALS
               </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="Specialties"
-                style={({ isActive }) => 
-                  isActive ? activeStyle : defaultStyle
-                }>
-                  SPECIALTIES
-                </NavLink>
             </li>
             <li>
               <NavLink

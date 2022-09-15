@@ -1,4 +1,3 @@
-import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Testimonials from "./components/Testimonials";
 import Specialties from './components/Specialties'
@@ -10,11 +9,13 @@ function App() {
       <Nav />
       <div className="container">
         <Divider />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
+        {/* <Routes>
+          <Route exact path="/" element={<Specialties />} />
           <Route exact path="/Testimonials" element={<Testimonials />} />
           <Route exact path="/Specialties" element={<Specialties />} />
-        </Routes>
+        </Routes> */}
+        <Specialties />
+        <Testimonials />
       </div>
     </div>
   );
