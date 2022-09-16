@@ -1,6 +1,6 @@
-import React from "react";
+import React, {forwardRef} from "react";
 
-function Testimonials() {
+const Testimonials = forwardRef((props, ref) => {
   const Testimonial = ({ text, name }) => {
     return (
       <div>
@@ -11,7 +11,7 @@ function Testimonials() {
   };
 
   return (
-    <div>
+    <div ref={ref}>
       <h1>Testimonials</h1>
       <Testimonial
         name="Skiye via Avvo.com"
@@ -19,6 +19,6 @@ function Testimonials() {
       />
     </div>
   );
-}
+})
 
 export default Testimonials;

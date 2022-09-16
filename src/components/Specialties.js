@@ -1,4 +1,4 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -8,7 +8,7 @@ import { CardActionArea } from "@mui/material";
 import housing from "../assets/housing.jpg";
 import notebook from '../assets/notebook.jpg'
 
-function Specialties() {
+const Specialties = forwardRef((props, ref) => {
   const Specialty = (props) => {
     return (
       <Grid2 item xs={12} align='center' marginBottom='2rem'>
@@ -36,17 +36,20 @@ function Specialties() {
     );
   };
   return (
+    <section ref={ref}>
     <Grid2
       container
       direction="column"
       alignItems="center"
       justifyContent="center"
     >
+      <h1>Specialties</h1>
       <Specialty image={housing} title="Housing Law" description="" />
       <Specialty image={notebook} title="Criminal Defense" description="" />
     </Grid2>
+    </section>
   );
-}
+})
 
 const styles = {
   specialties: {

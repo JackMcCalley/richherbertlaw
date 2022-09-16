@@ -8,19 +8,19 @@
             rgba(0, 0, 0, 0.7), 
             rgba(0, 0, 0, 0.7)
           ),
-        url('../assets/fountainpen.jpg');
-    overflow: hidden
+        url('../assets/fountainpen.jpg') no-repeat center center fixed;
 }
   
 
 .site-title {
-    height: 80vh;
+    height: 85vh;
     font-family: 'Libre Baskerville';
     display: flex;
     flex-direction: column;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    justify: center;
+    vertical-align: middle;
+    text-align: center;
     -webkit-animation: fadeIn linear 3000ms;
     -moz-animation: fadeIn linear 3000ms;
     -o-animation: fadeIn linear 3000ms;
@@ -49,15 +49,19 @@
 /* Nav Styles */
 
 .nav {
-    height: 20vh;
+    position: sticky;
+    top: 0;
+    height: 15vh;
     width: 100%;
     color: white;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.55), 
+        rgba(0, 0, 0, 0.55)
+      );
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
-    margin-top: 2rem;
+    
 }
   
 .nav ul {
@@ -76,6 +80,25 @@
     display: flex;
     align-items: center;
     margin: .25rem;
+}
+
+.button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: .25rem;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
 }
 
 .image-container {

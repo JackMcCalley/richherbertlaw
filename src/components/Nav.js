@@ -1,10 +1,34 @@
-import React, {useRef} from "react";
-import { NavLink, Link } from "react-router-dom";
+import React, {useEffect, useRef} from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import "../styles/Styles.css";
 import "../styles/Header.css"
 import richlogowhite from "../assets/richlogowhite.png";
 
-function Nav() {
+
+const Nav = ({ refs }) => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log("location", location.pathname);
+    switch (location.pathname) {
+      case "/Specialties":
+        scrollSmoothHandler(refs.specRef);
+        break;
+      case "/Testimonials":
+        scrollSmoothHandler(refs.testRef);
+        break;
+      // case "/Contact":
+      //   scrollSmoothHandler(refs.contactRef);
+      default:
+        //ignore
+    }
+  }, [location, refs])
+
+  const scrollSmoothHandler = (ref) => {
+     ref.current.scrollIntoView({behavior: 'smooth'})
+  }
+
   let activeStyle = {
     textDecoration: "none",
     borderStyle: "solid",
@@ -27,15 +51,14 @@ function Nav() {
             <img src={richlogowhite} alt="logo" />
           </div>
         </row>
-        <row className="subtitle">THE LAW OFFICE OF</row>
         <row className="title-text">
-        RICH HERBERT, P.C.
+        RICH HERBERT LAW, P.C.
         </row>
       </container>
       <row>
+        <div className='sticky'>
         <nav className="nav">
-          <ul className="ul">
-            
+          <ul className="ul">          
             <li>
               <NavLink
                 to="Specialties"
@@ -70,6 +93,7 @@ function Nav() {
             </li>
           </ul>
         </nav>
+        </div>
       </row>
     </div>
   );
