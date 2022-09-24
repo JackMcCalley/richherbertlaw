@@ -43,8 +43,8 @@ const Specialties = forwardRef((props, ref) => {
       alignItems="center"
       justifyContent="center"
     >
-      <h1>Specialties</h1>
-      <Specialty image={housing} title="Housing Law" description="" />
+      <h1 style={styles.title}>Specialties</h1>
+      <Specialty image={housing} title="HOUSING LAW" description="" />
       <Specialty image={notebook} title="Criminal Defense" description="" />
     </Grid2>
     </section>
@@ -59,6 +59,10 @@ const styles = {
     flexDirection: 'column',
     height: 'auto'
   },
+  title: {
+    fontSize: '36px',
+
+  }
 };
 
 export default Specialties;
