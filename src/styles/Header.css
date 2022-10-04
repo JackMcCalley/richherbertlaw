@@ -38,7 +38,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    margin: 1rem;
+    
 }
 
 .subtitle {
@@ -102,7 +102,7 @@
 }
 
 .image-container {
-    width: 25rem;
+    width: 20rem;
     height: auto;
 }
 
