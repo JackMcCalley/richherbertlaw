@@ -11,7 +11,7 @@ function App() {
   const contactRef = useRef(null);
 
   return (
-    <div style={{maxWidth: '100vw'}}>
+    <div style={{maxWidth: '100vw', margin: '0px'}}>
       <Nav refs={{homeRef, specRef, testRef, contactRef}} />
       <div className="container">
         <Divider />
