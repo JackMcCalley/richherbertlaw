@@ -56,9 +56,9 @@ const Nav = ({ refs }) => {
         </row>
       </container>
       <row>
-        <div className='sticky'>
+        <div>
         <nav className="nav">
-          <ul className="ul">          
+          <ul>          
             <li>
               <NavLink
                 to="Specialties"
@@ -87,9 +87,6 @@ const Nav = ({ refs }) => {
               >
                 CONTACT
               </NavLink>
-            </li>
-            <li>
-              <a href="tel:##########">PHONE: ### ###-####</a>
             </li>
           </ul>
         </nav>

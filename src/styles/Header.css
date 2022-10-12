@@ -9,6 +9,7 @@
             rgba(0, 0, 0, 0.7)
           ),
         url('../assets/fountainpen.jpg') no-repeat center center fixed;
+    min-width: 100vw;
 }
   
 
@@ -48,10 +49,12 @@
 
 /* Nav Styles */
 
+
+
 .nav {
-    position: sticky;
+    position: relative;
     top: 0;
-    height: 15vh;
+    height: auto;
     width: 100%;
     color: white;
     background: linear-gradient(
@@ -61,16 +64,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
   
 .nav ul {
-    font-size: 1.4rem;
-    padding: 0;
+    font-size: 2rem;
+    min-height: 15vh;
+    height: auto;
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-family: 'Libre Baskerville';
 }
 
 .nav a {

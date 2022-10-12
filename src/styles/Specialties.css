@@ -15,7 +15,19 @@
 .specialty-title {
     font-family: 'Libre Baskerville';
     position: relative;
-    font-size: 58px;
-    color: rgb(64, 64, 64);
+    font-size: 4vw;
+    color: rgb(48, 48, 48);
 }
 
+.specialty-type {
+    font-family: 'Libre Baskerville';
+    position: relative;
+    font-size: 3vw;
+    color: rgb(48, 48, 48);
+}
+
+.specialty-desc {
+    font-family: 'Libre Baskerville';
+    font-size: 1vw;
+    
+}
