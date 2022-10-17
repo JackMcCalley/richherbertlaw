@@ -1,12 +1,10 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import "../styles/Styles.css";
-import "../styles/Header.css"
+import "../styles/Header.css";
 import richlogowhite from "../assets/richlogowhite.png";
 
-
 const Nav = ({ refs }) => {
-
   const location = useLocation();
 
   useEffect(() => {
@@ -21,13 +19,13 @@ const Nav = ({ refs }) => {
       // case "/Contact":
       //   scrollSmoothHandler(refs.contactRef);
       default:
-        //ignore
+      //ignore
     }
-  }, [location, refs])
+  }, [location, refs]);
 
   const scrollSmoothHandler = (ref) => {
-     ref.current.scrollIntoView({behavior: 'smooth'})
-  }
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   let activeStyle = {
     textDecoration: "none",
@@ -51,49 +49,52 @@ const Nav = ({ refs }) => {
             <img src={richlogowhite} alt="logo" />
           </div>
         </row>
-        <row className="title-text">
-        RICH HERBERT LAW, P.C.
+        <row className="title-text">RICH HERBERT LAW, P.C.</row>
+        <row className="subtitle">richherbert@email.com</row>
+        <row className="subtitle">
+          <a className="phonelink" href="tel:123-456-7890">(###) ###-####</a>
         </row>
       </container>
       <row>
         <div>
-        <nav className="nav">
-          <ul>          
-            <li>
-              <NavLink
-                to="Specialties"
-                style={({ isActive }) => 
-                  isActive ? activeStyle : defaultStyle
-                }>
+          <nav className="nav">
+            <ul>
+              <li>
+                <NavLink
+                  to="Specialties"
+                  style={({ isActive }) =>
+                    isActive ? activeStyle : defaultStyle
+                  }
+                >
                   SPECIALTIES
                 </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="Testimonials"
-                style={({ isActive }) =>
-                  isActive ? activeStyle : defaultStyle
-                }
-              >
-                TESTIMONIALS
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="Contact"
-                style={({ isActive }) =>
-                  isActive ? activeStyle : defaultStyle
-                }
-              >
-                CONTACT
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+              </li>
+              <li>
+                <NavLink
+                  to="Testimonials"
+                  style={({ isActive }) =>
+                    isActive ? activeStyle : defaultStyle
+                  }
+                >
+                  TESTIMONIALS
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="Contact"
+                  style={({ isActive }) =>
+                    isActive ? activeStyle : defaultStyle
+                  }
+                >
+                  CONTACT
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
         </div>
       </row>
     </div>
   );
-}
+};
 
 export default Nav;
