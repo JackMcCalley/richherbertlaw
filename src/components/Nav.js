@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "../styles/Styles.css";
 import "../styles/Header.css";
 import richlogowhite from "../assets/richlogowhite.png";
@@ -50,9 +50,15 @@ const Nav = ({ refs }) => {
           </div>
         </row>
         <row className="title-text">RICH HERBERT LAW, P.C.</row>
+        <br />
         <row className="subtitle">richherbert@email.com</row>
+        <br />
+        <row className="subtitle">430 Main Street, Suite 3, Agawam, MA 01001</row>
+        <br />
         <row className="subtitle">
-          <a className="phonelink" href="tel:123-456-7890">(###) ###-####</a>
+          <button className="call-button">
+            <a className="phonelink" href="tel:123-456-7890">Call (###) ###-####</a>
+          </button>
         </row>
       </container>
       <row>

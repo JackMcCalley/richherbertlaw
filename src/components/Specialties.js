@@ -20,13 +20,13 @@ const Specialties = forwardRef((props, ref) => {
           width: '95vw',
           margin: 0,
           }}>
-        <Grid xs={6} sx={{ margin: 0, padding: 0, border: 2, borderRight: 3, height: 'auto' }}>
+        <Grid xs={12} sm={6} sx={{ margin: 0, padding: 0, border: 2, borderRight: 3, height: 'auto' }}>
           <Box sx={{}}>
             <Typography style={{margin: '2rem', fontFamily: 'Libre Baskerville', fontSize: '3.5vw'}} className="specialty-type">{props.title}</Typography>
             <Typography className="specialty-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
           </Box>
         </Grid>
-        <Grid xs={6} sx={{ margin: 0, padding: 0, borderRight: 1, borderBottom: 1, borderTop: 1}}>
+        <Grid xs={12} sm={6} sx={{ margin: 0, padding: 0, borderRight: 1, borderBottom: 1, borderTop: 1}}>
           <div style={{maxHeight: '100%', minWidth: '30vw', overflow: 'hidden'}}>
             <img style={{}} alt="housing" src={props.image} />
           </div>
@@ -49,6 +49,7 @@ const Specialties = forwardRef((props, ref) => {
         <Specialty image={housingthick} title="HOUSING LAW" description="" />
         <br/><br/>
         <Specialty image={notebook} title="CRIMINAL DEFENSE" description="" />
+        <br/>
       </Grid>
     </section>
   );

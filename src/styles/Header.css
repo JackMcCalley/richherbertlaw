@@ -75,8 +75,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
     font-family: 'Libre Baskerville';
+    justify-content: center;
 }
 
 .nav a {
@@ -85,16 +86,20 @@
     height: 100%;
     display: flex;
     align-items: center;
-    margin: .25rem;
 }
 
 .phonelink {
-    color: inherit;
+    color: white;
+    font-size: 2rem;
     text-decoration: none;
     height: 100%;
     display: flex;
     align-items: center;
-    margin: .25rem;
+    margin: .5rem;
+}
+
+.call-button {
+    background-color: transparent;
 }
 
 .button {
