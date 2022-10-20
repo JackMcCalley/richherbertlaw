@@ -44,7 +44,7 @@ const Nav = ({ refs }) => {
           <div className="image-container">
             <img src={richlogowhite} alt="logo" />
           </div>
-        </row>
+        </row>  
         <row className="title-text">RICH HERBERT LAW, P.C.</row>
         <row className="subtitle">richherbert@email.com</row>
         <row className="subtitle">430 Main Street, Suite 3, Agawam, MA 01001</row>
