@@ -39,6 +39,7 @@
     justify-content: center;
     align-items: center;
     color: white;
+    margin-bottom: 10px;
 }
 
 .subtitle {
@@ -47,6 +48,8 @@
     justify-content: center;
     align-items: center;
     color: white;
+    margin-bottom: 15px;
+    font-family: 'Libre Baskerville';
 }
 
 /* Nav Styles */
@@ -64,6 +67,7 @@
     justify-content: center;
     align-items: center;
     margin: 0px;
+    padding: 0px;
 }
   
 .nav ul {
@@ -75,9 +79,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 2rem;
     font-family: 'Libre Baskerville';
     justify-content: center;
+    padding: 0px;
 }
 
 .nav a {

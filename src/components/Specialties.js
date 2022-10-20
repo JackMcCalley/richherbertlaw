@@ -20,7 +20,7 @@ const Specialties = forwardRef((props, ref) => {
           width: '95vw',
           margin: 0,
           }}>
-        <Grid xs={12} sm={6} sx={{ margin: 0, padding: 0, border: 2, borderRight: 3, height: 'auto' }}>
+        <Grid xs={12} sm={6} sx={{ margin: 0, padding: 0, border: 1, borderRight: 2, height: 'auto' }}>
           <Box sx={{}}>
             <Typography style={{margin: '2rem', fontFamily: 'Libre Baskerville', fontSize: '3.5vw'}} className="specialty-type">{props.title}</Typography>
             <Typography className="specialty-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
