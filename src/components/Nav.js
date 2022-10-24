@@ -37,10 +37,6 @@ const Nav = ({ refs }) => {
     textDecoration: "none",
   };
 
-  // const myRef = useRef(null)
-
-  // const executeScroll = myRef.current.scrollIntoView()
-
   return (
     <div className="header">
       <container className="site-title">
@@ -48,11 +44,14 @@ const Nav = ({ refs }) => {
           <div className="image-container">
             <img src={richlogowhite} alt="logo" />
           </div>
-        </row>
+        </row>  
         <row className="title-text">RICH HERBERT LAW, P.C.</row>
         <row className="subtitle">richherbert@email.com</row>
+        <row className="subtitle">430 Main Street, Suite 3, Agawam, MA 01001</row>
         <row className="subtitle">
-          <a className="phonelink" href="tel:123-456-7890">(###) ###-####</a>
+          <button className="call-button">
+            <a className="phonelink" href="tel:123-456-7890">(###) ###-####</a>
+          </button>
         </row>
       </container>
       <row>
