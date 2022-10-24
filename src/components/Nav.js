@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "../styles/Styles.css";
 import "../styles/Header.css";
 import richlogowhite from "../assets/richlogowhite.png";
@@ -16,8 +16,8 @@ const Nav = ({ refs }) => {
       case "/Testimonials":
         scrollSmoothHandler(refs.testRef);
         break;
-      // case "/Contact":
-      //   scrollSmoothHandler(refs.contactRef);
+      case "/Contact":
+        scrollSmoothHandler(refs.contactRef);
       default:
       //ignore
     }

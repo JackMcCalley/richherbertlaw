@@ -2,6 +2,8 @@ import { useRef } from "react"
 import Nav from "./components/Nav";
 import Testimonials from "./components/Testimonials";
 import Specialties from './components/Specialties'
+import Contact from "./components/Contact";
+import Footer from './components/Footer'
 // import { Route, Routes } from "react-router-dom";
 import Divider from "./components/Divider";
 function App() {
@@ -18,6 +20,9 @@ function App() {
         <Specialties ref={specRef} />
         <Divider />
         <Testimonials ref={testRef}/>
+        <Divider />
+        <Contact ref={contactRef}/>
+        <Footer />
       </div>
     </div>
   );
