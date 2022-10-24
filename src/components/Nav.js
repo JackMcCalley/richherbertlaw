@@ -18,6 +18,7 @@ const Nav = ({ refs }) => {
         break;
       case "/Contact":
         scrollSmoothHandler(refs.contactRef);
+        break;
       default:
       //ignore
     }
