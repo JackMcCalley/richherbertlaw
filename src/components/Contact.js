@@ -37,17 +37,18 @@ const Contact = forwardRef((props, ref) => {
   };
   return (
     <section ref={ref}>
-      <Grid sx={{ width: "40%", height: "50vh" }}>
+      <Grid sx={{ width: "60%", marginLeft: '20%', marginRight: '20%', marginBottom: '3rem', height: "50vh", display: 'flex', justifyContent: 'center' }}>
         <Box
           sx={{
             justifyContent: "center",
             display: "flex",
             flexDirection: "column",
-            boxShadow: 4,
+            boxShadow: 6,
             padding: "50px",
           }}
         >
           <form>
+            <Grid xs={12}>
             <TextField
               onChange={handleChange}
               type="text"
@@ -55,6 +56,8 @@ const Contact = forwardRef((props, ref) => {
               label="Your Name"
               variant="outlined"
             />
+            </Grid>
+            <Grid xs={12}>
             <FormControl required>
               <FormLabel>Specialty</FormLabel>
               <RadioGroup name="category" onChange={handleChange}>
@@ -70,14 +73,17 @@ const Contact = forwardRef((props, ref) => {
                 />
               </RadioGroup>
             </FormControl>
+            </Grid>
+            <Grid xs={12}>
             <TextField
               onChange={handleChange}
               type="text"
               name="to_name"
-              label="Your Name"
+              label="Write message here"
               variant="outlined"
             />
-            <button type="submit">Submit</button>
+            </Grid>
+            <button type="submit">Inquire</button>
           </form>
         </Box>
       </Grid>
