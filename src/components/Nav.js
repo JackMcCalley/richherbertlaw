@@ -47,11 +47,11 @@ const Nav = ({ refs }) => {
           </div>
         </row>  
         <row className="title-text">RICH HERBERT LAW, P.C.</row>
-        <row className="subtitle">richherbert@email.com</row>
+        <row className="subtitle">Rich@RichHerbertLaw.com</row>
         <row className="subtitle">430 Main Street, Suite 3, Agawam, MA 01001</row>
         <row className="subtitle">
           <button className="call-button">
-            <a className="phonelink" href="tel:123-456-7890">(###) ###-####</a>
+            <a className="phonelink" href="tel:413-212-9849">(413) 212-9849</a>
           </button>
         </row>
       </container>
